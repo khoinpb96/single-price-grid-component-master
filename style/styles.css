@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+}
+
+* body {
+  background: #e5eff5;
+}
+
+* body .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+* body .attribution a {
+  color: #3e52a3;
+}
+
+.container {
+  max-width: 550px;
+  margin: 5rem auto;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.container .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .row1 {
+  background-color: white;
+}
+
+.container .row1 h2 {
+  color: #2ab2af;
+  margin-bottom: 1rem;
+}
+
+.container .row1 h4 {
+  color: #c0df34;
+  margin-bottom: 0.7rem;
+}
+
+.container .row1 p {
+  color: #98a6bd;
+  font-size: 13px;
+  line-height: 1.3rem;
+}
+
+.container .col {
+  padding: 2rem;
+  color: white;
+}
+
+.container .sub {
+  width: 50%;
+  background: #2bb3b1;
+}
+
+.container .sub p {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.container .sub__title {
+  margin-bottom: 1rem;
+}
+
+.container .sub__desc {
+  margin: 1rem 0 1.5rem 0;
+  font-size: 0.85rem;
+  color: #f0f0f0 !important;
+}
+
+.container .sub__span {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: white;
+}
+
+.container .sub__btn {
+  border: none;
+  border-radius: 4px;
+  background: #c0df34;
+  color: white;
+  padding: 0.8rem 0;
+  width: 100%;
+  font-weight: 700;
+  cursor: pointer;
+  -webkit-transition: 0.05s;
+  transition: 0.05s;
+}
+
+.container .sub__btn:active {
+  opacity: 0.8;
+}
+
+.container .why {
+  width: 50%;
+  background: #4abebd;
+}
+
+.container .why__title {
+  margin-bottom: 1rem;
+}
+
+.container .why__desc {
+  font-size: 0.85rem;
+  opacity: 0.7;
+  line-height: 1rem;
+}
+
+@media (max-width: 500px) {
+  .container {
+    width: 85%;
+  }
+  .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .row .why,
+  .row .sub {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

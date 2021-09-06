@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+$color1: hsl(179, 62%, 43%);
+$color2: hsl(71, 73%, 54%);
+$bg: hsl(204, 43%, 93%);
+$color4: hsl(218, 22%, 67%);
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+  body {
+    background: $bg;
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+      a {
+        color: hsl(228, 45%, 44%);
+      }
+    }
+  }
+}
+
+.container {
+  max-width: 550px;
+  margin: 5rem auto;
+  overflow: hidden;
+  border-radius: 8px;
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
+  .row1 {
+    background-color: white;
+    h2 {
+      color: $color1;
+      margin-bottom: 1rem;
+    }
+    h4 {
+      color: $color2;
+      margin-bottom: 0.7rem;
+    }
+    p {
+      color: $color4;
+      font-size: 13px;
+      line-height: 1.3rem;
+    }
+  }
+  .col {
+    padding: 2rem;
+    color: white;
+  }
+  .sub {
+    width: 50%;
+    background: #2bb3b1;
+    p {
+      color: rgba(255, 255, 255, 0.7);
+    }
+    &__title {
+      margin-bottom: 1rem;
+    }
+    &__desc {
+      margin: 1rem 0 1.5rem 0;
+      font-size: 0.85rem;
+      color: #f0f0f0 !important;
+    }
+    &__span {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: white;
+    }
+    &__btn {
+      border: none;
+      border-radius: 4px;
+      background: $color2;
+      color: white;
+      padding: 0.8rem 0;
+      width: 100%;
+      font-weight: 700;
+      cursor: pointer;
+      transition: 0.05s;
+      &:active {
+        opacity: 0.8;
+      }
+    }
+  }
+  .why {
+    width: 50%;
+    background: #4abebd;
+    &__title {
+      margin-bottom: 1rem;
+    }
+    &__desc {
+      font-size: 0.85rem;
+      opacity: 0.7;
+      line-height: 1rem;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    width: 85%;
+  }
+  .row {
+    flex-direction: column;
+    .why,
+    .sub {
+      width: 100%;
+    }
+  }
+}
